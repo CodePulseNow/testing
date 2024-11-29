@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <style>
+      .container {
+        position: relative;
+        text-align: center;
+        margin-top: 20px;
+      }
+
+      .main-image {
+        width: 100%;
+        max-width: 800px;
+      }
+
+      .icon-row {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        gap: 16px;
+      }
+
+      .icon {
+        position: relative;
+        transition: transform 0.5s ease-in-out;
+      }
+
+      .icon:hover {
+        transform: scale(0.9);
+      }
+
+      .icon:hover .icon-text {
+        visibility: visible;
+        opacity: 1;
+      }
+
+      .icon:hover ~ .icon,
+      .icon:hover ~ .icon ~ .buttons,
+      .icon:hover ~ .icon ~ .buttons ~ .vertical-line,
+      .icon:hover ~ .icon ~ .buttons ~ .vertical-line ~ .logo1 {
+        transform: translateX(80px);
+      }
+
+      .web:hover ~ .icon,
+      .web:hover ~ .icon ~ .buttons,
+      .web:hover ~ .icon ~ .buttons ~ .vertical-line,
+      .web:hover ~ .icon ~ .buttons ~ .vertical-line ~ .logo1 {
+        transform: translateX(135px);
+      }
+      .number:hover ~ .buttons,
+      .number:hover ~ .buttons ~ .vertical-line,
+      .number:hover ~ .buttons ~ .vertical-line ~ .logo1 {
+        transform: translateX(68px);
+      }
+
+
+      .icon-text {
+    position: absolute;
+    top: 43%;
+    left: 78%;
+    /* background-color: #03b2b5; */
+    /* background: linear-gradient(to right, #0a0a0a, #03b2b5); */
+    transform: translateY(-50%);
+    padding: 3px 5px;
+    border-top: 2px solid #1c2b65;
+    border-right: 2px solid #1c2b65;
+    border-bottom: 2px solid #1c2b65;
+    border-top-left-radius: 4px;
+    border-left: none;
+    border-top-right-radius: 15px;
+    /* border-top-left-radius: 15px; */
+    border-bottom-right-radius: 15px;
+    /* background-color: #f9f9f9; */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    white-space: nowrap;
+    /* color: white; */
+}
+      .buttons {
+        display: flex;
+        /* margin-left: 50px; */
+      }
+
+      .button {
+        display: flex;
+        /* flex-direction: column; */
+        margin: 0 5px;
+        padding: 8px 12px;
+        background: #1c2b65;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background 0.3s;
+      }
+
+      .button:hover {
+        background: #03b2b5;
+      }
+
+      .vertical-line {
+        border-left: 2px solid #000;
+        height: 40px;
+        /* margin: 0 20px; */
+      }
+
+      .logo1 {
+        height: 50px;
+        width: 100px;
+      }
+      .icon img,
+      .button img {
+        width: 25px;
+        height: 25px;
+      }
+
+      .text-container {
+  display: flex; /* Flex container for text */
+  flex-direction: column; /* Aligns text in a vertical column */
+  align-items: start; /* Vertically centers the text inside the container */
+  margin-left: 5px;
+}
+      .generat-text {
+  /* display: block; Ensures GET IT ON is on a new line */
+  
+  font-size: 7px; /* Example of custom style for GET IT ON */
+}
+
+.brand-name {
+  /* display: block; Ensures Google Play is also on a new line */
+  font-weight: bold;
+  font-size: 13px; /* Example of custom style for Google Play */
+}
+
+
+    </style>
+  </head>
+
+  <body>
+    <div class="image-container">
+      <div class="container">
+        <!-- Main Image  -->
+        <img
+          src="pics/pmdu.png"
+          alt="Pakistan Citizen Portal"
+          class="main-image"
+        />
+
+        <div class="icon-row">
+          <div class="icon">
+            <!-- <i class="fab fa-facebook-f"></i> -->
+            <img src="./pics/facebook.png" alt="" />
+
+            <div class="icon-text">PakistanPMDU</div>
+          </div>
+          <div class="icon web">
+            <!-- <i class="fas fa-comments fa-1x"></i> -->
+            <img src="./pics/web.png" alt="" />
+
+            <div class="icon-text">web.citizenportal.gov.pk</div>
+          </div>
+          <div class="icon">
+            <img src="./pics/twitter.png" alt="" />
+
+            <!-- <i class="fab fa-twitter"></i> -->
+            <div class="icon-text">PakistanPMDU</div>
+          </div>
+          <div class="icon">
+            <!-- <i class="fas fa-cog fa-1x"></i> -->
+            <img src="./pics/instagram.png" alt="" />
+
+            <div class="icon-text">PakistanPMDU</div>
+          </div>
+          <div class="icon">
+            <!-- <i class="fas fa-envelope fa-1x"></i> -->
+            <img src="./pics/youtube.png" alt="" />
+
+            <div class="icon-text">PakistanPMDU</div>
+          </div>
+          <div class="icon number">
+            <!-- <i class="fas fa-question fa-1x"></i> -->
+            <img src="./pics/telephone-call.png" alt="" />
+
+            <div class="icon-text">051-9000111</div>
+          </div>
+
+          <div class="buttons">
+            <button class="button">
+                <img src="pics/playstore.png" alt="" />
+                <div class="text-container">
+                    <div class="generat-text">GET IT ON</div>
+                    <div class="brand-name">Google Play</div>
+                  </div>
+              </button>
+              <button class="button">
+                <img src="pics/apple.png" alt="" />
+                <div class="text-container">
+                    <div class="generat-text">Available on the</div>
+                    <div class="brand-name">App Store</div>
+                  </div>
+              </button>
+              <button class="button">
+                <img src="pics/huawei.png" alt="" />
+                <div class="text-container">
+                    <div class="generat-text">Download on</div>
+                    <div class="brand-name">AppGallery</div>
+                  </div>
+              </button>
+              
+            
+          </div>
+
+          <div class="vertical-line"></div>
+
+          <img src="./pics/pmdu3.png" alt="Logo" class="logo1" />
+        </div>
+      </div>
+
+      <!-- <img src="pics/register.jpg" alt="Image 2" width="39%" class="rounded-3xl shadow-md shadow-black		" style="
+      margin-bottom: 23px;
+    "> -->
+    </div>
+  </body>
+</html>
