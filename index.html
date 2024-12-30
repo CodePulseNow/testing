@@ -120,6 +120,7 @@
 
       .logo-text {
         font-size: x-small;
+        color: white;
       }
 
       nav {
@@ -129,7 +130,7 @@
         width: 100%;
         height: 100%;
         height: 70px;
-        background: #3e8da8;
+        background: linear-gradient(45deg, #1c2b65, #03b2b5);
         box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
         z-index: 99;
       }
@@ -156,6 +157,7 @@
       nav .navbar .nav-links {
         line-height: 70px;
         height: 100%;
+        /* overflow-y: auto; Enable vertical scrolling */
       }
 
       nav .navbar .links {
@@ -181,7 +183,14 @@
       }
 
       .links li:hover .htmlcss-arrow,
-      .links li:hover .js-arrow {
+      .links li:hover .js-arrow,
+      .links li:hover .htmlcss-arrow2,
+      .links li:hover .htmlcss-arrow3,
+      .links li:hover .htmlcss-arrow4,
+      .links li:hover .htmlcss-arrow5,
+      .links li:hover .htmlcss-arrow6,
+      .links li:hover .htmlcss-arrow7,
+      .links li:hover .htmlcss-arrow8 {
         transform: rotate(180deg);
       }
 
@@ -201,7 +210,7 @@
         top: 70px;
         left: 0;
         line-height: 40px;
-        background: #3e8da8;
+        background: linear-gradient(45deg, #1c2b65, #03b2b5);
         box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
         border-radius: 0 0 4px 4px;
         display: none;
@@ -209,7 +218,15 @@
       }
 
       nav .navbar .links li:hover .htmlCss-sub-menu,
-      nav .navbar .links li:hover .js-sub-menu {
+      nav .navbar .links li:hover .js-sub-menu,
+      nav .navbar .links li:hover .htmlCss-sub-menu2,
+      nav .navbar .links li:hover .htmlCss-sub-menu3,
+      nav .navbar .links li:hover .htmlCss-sub-menu4,
+      nav .navbar .links li:hover .htmlCss-sub-menu5,
+      nav .navbar .links li:hover .htmlCss-sub-menu6,
+      nav .navbar .links li:hover .htmlCss-sub-menu7,
+      nav .navbar .links li:hover .htmlCss-sub-menu8
+      {
         display: block;
       }
 
@@ -224,11 +241,11 @@
         font-weight: 500;
       }
 
-      .navbar .links li .sub-menu .more-arrow {
+      .navbar .links li .sub-menu .more-arrow ,.navbar .links li .sub-menu .more-arrow1,.navbar .links li .sub-menu .more-arrow2 {
         line-height: 40px;
       }
 
-      .navbar .links li .sub-menu .more-sub-menu {
+      .navbar .links li .sub-menu .more-sub-menu,.navbar .links li .sub-menu .more-sub-menu1,.navbar .links li .sub-menu .more-sub-menu2 {
         position: absolute;
         top: 0;
         left: 100%;
@@ -237,7 +254,7 @@
         display: none;
       }
 
-      .links li .sub-menu .more:hover .more-sub-menu {
+      .links li .sub-menu .more:hover .more-sub-menu,.links li .sub-menu .more:hover .more-sub-menu1,.links li .sub-menu .more:hover .more-sub-menu2  {
         display: block;
       }
 
@@ -266,7 +283,7 @@
         top: 80px;
         height: 60px;
         width: 300px;
-        background: #3e8da8;
+        background: linear-gradient(45deg, #1c2b65, #03b2b5);
         border-radius: 6px;
         opacity: 0;
         pointer-events: none;
@@ -277,7 +294,7 @@
         top: 65px;
         opacity: 1;
         pointer-events: auto;
-        background: #3e8da8;
+        background: linear-gradient(45deg, #1c2b65, #03b2b5);
       }
 
       .search-box .input-box::before {
@@ -285,7 +302,7 @@
         position: absolute;
         height: 20px;
         width: 20px;
-        background: #3e8da8;
+        background: linear-gradient(45deg, #1c2b65, #03b2b5);
         right: 10px;
         top: -6px;
         transform: rotate(45deg);
@@ -345,14 +362,13 @@
           display: block;
           max-width: 270px;
           width: 100%;
-          background: #3e8da8;
+          background: linear-gradient(45deg, #1c2b65, #03b2b5);
           line-height: 40px;
           padding: 20px;
           box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
           transition: all 0.5s ease;
           z-index: 1000;
           overflow-y: auto; /* Enable vertical scrolling */
-
         }
 
         .navbar .nav-links .sidebar-logo {
@@ -396,24 +412,31 @@
           border-bottom: none;
         }
 
-        .navbar .links li .sub-menu .more-sub-menu {
+        .navbar .links li .sub-menu .more-sub-menu ,.navbar .links li .sub-menu .more-sub-menu1,.navbar .links li .sub-menu .more-sub-menu2 {
           display: none;
           position: relative;
           left: 0;
         }
 
-        .navbar .links li .sub-menu .more-sub-menu li {
+        .navbar .links li .sub-menu .more-sub-menu li,.navbar .links li .sub-menu .more-sub-menu1 li,.navbar .links li .sub-menu .more-sub-menu2 li  {
           display: flex;
           align-items: center;
           justify-content: space-between;
         }
 
         .links li:hover .htmlcss-arrow,
-        .links li:hover .js-arrow {
+      .links li:hover .js-arrow,
+      .links li:hover .htmlcss-arrow2,
+      .links li:hover .htmlcss-arrow3,
+      .links li:hover .htmlcss-arrow4,
+      .links li:hover .htmlcss-arrow5,
+      .links li:hover .htmlcss-arrow6,
+      .links li:hover .htmlcss-arrow7,
+      .links li:hover .htmlcss-arrow8 {
           transform: rotate(0deg);
         }
 
-        .navbar .links li .sub-menu .more-sub-menu {
+        .navbar .links li .sub-menu .more-sub-menu,.navbar .links li .sub-menu .more-sub-menu1,.more-sub-menu2 {
           display: none;
         }
 
@@ -424,29 +447,49 @@
           /* justify-content: space-between; */
         }
 
-        .links li .sub-menu .more:hover .more-sub-menu {
+        .links li .sub-menu .more:hover .more-sub-menu,.links li .sub-menu .more:hover .more-sub-menu1,.links li .sub-menu .more:hover .more-sub-menu2 {
           display: none;
         }
 
         nav .navbar .links li:hover .htmlCss-sub-menu,
-        nav .navbar .links li:hover .js-sub-menu {
+      nav .navbar .links li:hover .js-sub-menu,
+      nav .navbar .links li:hover .htmlCss-sub-menu2,
+      nav .navbar .links li:hover .htmlCss-sub-menu3,
+      nav .navbar .links li:hover .htmlCss-sub-menu4,
+      nav .navbar .links li:hover .htmlCss-sub-menu5,
+      nav .navbar .links li:hover .htmlCss-sub-menu6,
+      nav .navbar .links li:hover .htmlCss-sub-menu7,
+      nav .navbar .links li:hover .htmlCss-sub-menu8 {
           display: none;
-        }
-
-        .navbar .nav-links.show1 .links .htmlCss-sub-menu,
-        .navbar .nav-links.show3 .links .js-sub-menu,
-        .navbar .nav-links.show4 .links .htmlCss-sub-menu2,
-        .navbar .nav-links.show2 .links .more .more-sub-menu {
-          display: block;
         }
 
         .navbar .nav-links.show1 .links .htmlcss-arrow,
         .navbar .nav-links.show3 .links .js-arrow,
-        .navbar .nav-links.show4 .links .htmlcss-arrow2 {
+        .navbar .nav-links.show4 .links .htmlcss-arrow2,
+        .navbar .nav-links.show5 .links .htmlcss-arrow3,
+        .navbar .nav-links.show6 .links .htmlcss-arrow4,
+        .navbar .nav-links.show7 .links .htmlcss-arrow5,
+        .navbar .nav-links.show8 .links .htmlcss-arrow6,
+        .navbar .nav-links.show9 .links .htmlcss-arrow7,
+        .navbar .nav-links.show10 .links .htmlcss-arrow8 {
           transform: rotate(180deg);
         }
+        .navbar .nav-links.show1 .links .htmlCss-sub-menu,
+        .navbar .nav-links.show3 .links .js-sub-menu,
+        .navbar .nav-links.show4 .links .htmlCss-sub-menu2,
+        .navbar .nav-links.show5 .links .htmlCss-sub-menu3,
+        .navbar .nav-links.show6 .links .htmlCss-sub-menu4,
+        .navbar .nav-links.show7 .links .htmlCss-sub-menu5,
+        .navbar .nav-links.show8 .links .htmlCss-sub-menu6,
+        .navbar .nav-links.show9 .links .htmlCss-sub-menu7,
+        .navbar .nav-links.show10 .links .htmlCss-sub-menu8,
+        .navbar .nav-links.show2 .links .more .more-sub-menu,
+        .navbar .nav-links.view2 .links .more .more-sub-menu1,
+        .navbar .nav-links.view3 .links .more .more-sub-menu2 {
+          display: block;
+        }
 
-        .navbar .nav-links.show2 .links .more-arrow {
+        .navbar .nav-links.show2 .links .more-arrow,.navbar .nav-links.view2 .links .more-arrow1,.navbar .nav-links.view3 .links .more-arrow2 {
           transform: rotate(90deg);
         }
       }
@@ -482,7 +525,7 @@
         <!-- <div class="logo"><a href="#"> <img src="./pics/SSGC_Log.png" alt="" srcset="" class="h-10"> </a></div> -->
         <div class="nav-links">
           <div class="sidebar-logo">
-            <span class="logo-name">CodingLab</span>
+            <span class="logo-name">SSGC</span>
             <i class="bx bx-x"></i>
           </div>
           <ul class="links">
@@ -512,9 +555,9 @@
                 <li class="more">
                   <span
                     ><a href="#">Policies</a>
-                    <i class="bx bxs-chevron-right arrow more-arrow"></i>
+                    <i class="bx bxs-chevron-right arrow more-arrow1"></i>
                   </span>
-                  <ul class="more-sub-menu sub-menu">
+                  <ul class="more-sub-menu1 sub-menu">
                     <li>
                       <a href="#">Business Principles And Ethics policy</a>
                     </li>
@@ -535,9 +578,9 @@
                 <li class="more">
                   <span
                     ><a href="#">Gas Transportation</a>
-                    <i class="bx bxs-chevron-right arrow more-arrow"></i>
+                    <i class="bx bxs-chevron-right arrow more-arrow2"></i>
                   </span>
-                  <ul class="more-sub-menu sub-menu">
+                  <ul class="more-sub-menu2 sub-menu">
                     <li><a href="#">Pakistan Gas Network Code</a></li>
                     <li><a href="#">Pakistan Gas Network Code-Amendment</a></li>
                     <li>
@@ -667,8 +710,8 @@
             </li>
             <li>
               <a href="#">Investor Info</a>
-              <i class="bx bxs-chevron-down js-arrow arrow"></i>
-              <ul class="js-sub-menu sub-menu">
+              <i class="bx bxs-chevron-down htmlcss-arrow3 arrow"></i>
+              <ul class="htmlCss-sub-menu3 sub-menu">
                 <li class="more">
                   <span
                     ><a href="#">Compliance with SOE Act</a>
@@ -748,9 +791,9 @@
             </li>
             <li>
               <a href="#">New Connection</a>
-              <i class="bx bxs-chevron-down js-arrow arrow"></i>
+              <i class="bx bxs-chevron-down htmlcss-arrow4 arrow"></i>
 
-              <ul class="js-sub-menu sub-menu">
+              <ul class="htmlCss-sub-menu4 sub-menu">
                 <li><a href="#">Apply For Commercial Gas Connection</a></li>
                 <li><a href="#">Apply For Industrial Connection</a></li>
 
@@ -765,9 +808,9 @@
             <li>
               <a href="#">Tenders</a>
 
-              <i class="bx bxs-chevron-down js-arrow arrow"></i>
+              <i class="bx bxs-chevron-down htmlcss-arrow5 arrow"></i>
 
-              <ul class="js-sub-menu sub-menu">
+              <ul class="htmlCss-sub-menu5 sub-menu">
                 <li><a href="#">Active Tenders </a></li>
                 <li><a href="#">Most Procures Material </a></li>
                 <li><a href="#">Tender Evaluations </a></li>
@@ -783,9 +826,9 @@
             <li>
               <a href="#">Media Center</a>
 
-              <i class="bx bxs-chevron-down js-arrow arrow"></i>
+              <i class="bx bxs-chevron-down htmlcss-arrow6 arrow"></i>
 
-              <ul class="js-sub-menu sub-menu">
+              <ul class="htmlCss-sub-menu6 sub-menu">
                 <li><a href="#">Notifications </a></li>
                 <li><a href="#">Flame Magzine </a></li>
                 <li><a href="#">Advertisements </a></li>
@@ -799,9 +842,9 @@
             <li>
               <a href="#">Helpline</a>
 
-              <i class="bx bxs-chevron-down js-arrow arrow"></i>
+              <i class="bx bxs-chevron-down htmlcss-arrow7 arrow"></i>
 
-              <ul class="js-sub-menu sub-menu">
+              <ul class="htmlCss-sub-menu7 sub-menu">
                 <li><a href="#">How Customers Can Complain </a></li>
                 <li>
                   <a href="#"
@@ -819,9 +862,9 @@
             </li>
             <li>
               <a href="#">R&D Dept</a>
-              <i class="bx bxs-chevron-down js-arrow arrow"></i>
+              <i class="bx bxs-chevron-down htmlcss-arrow8 arrow"></i>
 
-              <ul class="js-sub-menu sub-menu">
+              <ul class="htmlCss-sub-menu8 sub-menu">
                 <li><a href="#">Let's Work Together</a></li>
                 <li><a href="#">R&D Collaboration With Acedemia</a></li>
               </ul>
@@ -896,13 +939,47 @@
       moreArrow.onclick = function () {
         navLinks.classList.toggle("show2");
       };
+      let moreArrow2 = document.querySelector(".more-arrow1");
+      moreArrow2.onclick = function () {
+        navLinks.classList.toggle("view2");
+      };
+
+      let moreArrow3 = document.querySelector(".more-arrow2");
+      moreArrow3.onclick = function () {
+        navLinks.classList.toggle("view3");
+      };
+
       let jsArrow = document.querySelector(".js-arrow");
       jsArrow.onclick = function () {
         navLinks.classList.toggle("show3");
       };
-      let jsArrow2 = document.querySelector(".htmlcss-arrow2");
-      jsArrow2.onclick = function () {
+      let htmlcssArrow2 = document.querySelector(".htmlcss-arrow2");
+      htmlcssArrow2.onclick = function () {
         navLinks.classList.toggle("show4");
+      };
+      let htmlcssArrow3 = document.querySelector(".htmlcss-arrow3");
+      htmlcssArrow3.onclick = function () {
+        navLinks.classList.toggle("show5");
+      };
+      let htmlcssArrow4 = document.querySelector(".htmlcss-arrow4");
+      htmlcssArrow4.onclick = function () {
+        navLinks.classList.toggle("show6");
+      };
+      let htmlcssArrow5 = document.querySelector(".htmlcss-arrow5");
+      htmlcssArrow5.onclick = function () {
+        navLinks.classList.toggle("show7");
+      };
+      let htmlcssArrow6 = document.querySelector(".htmlcss-arrow6");
+      htmlcssArrow6.onclick = function () {
+        navLinks.classList.toggle("show8");
+      };
+      let htmlcssArrow7 = document.querySelector(".htmlcss-arrow7");
+      htmlcssArrow7.onclick = function () {
+        navLinks.classList.toggle("show9");
+      };
+      let htmlcssArrow8 = document.querySelector(".htmlcss-arrow8");
+      htmlcssArrow8.onclick = function () {
+        navLinks.classList.toggle("show10");
       };
     </script>
   </body>
